@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Shafique | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0b0d;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .glass-nav {
+      background: rgba(10, 10, 15, 0.85);
+      backdrop-filter: blur(10px);
+    }
+    .nav-link {
+      color: #ccc !important;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #00e0ff !important;
+    }
+    .glow-text {
+      color: #00e0ff;
+      text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: radial-gradient(circle at top, #121216, #0b0b0d);
+    }
+    .profile-img {
+      width: 150px;
+      border: 3px solid #00e0ff;
+      box-shadow: 0 0 20px #00e0ff;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #00e0ff;
+      margin-bottom: 30px;
+    }
+
+    /* Skills */
+    .skills-section {
+      background: linear-gradient(180deg, #111116, #0c0c0f);
+    }
+    .skill-card {
+      background: #1a1a20;
+      color: #00e0ff;
+      font-weight: 600;
+      margin: 10px;
+      padding: 15px 10px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00e0ff;
+    }
+
+    /* Projects */
+    .project-card {
+      background: #15151a;
+      border-radius: 15px;
+      transition: all 0.4s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00e0ff;
+    }
+
+    /* Contact */
+    .contact-section {
+      background: linear-gradient(180deg, #0b0b0d, #121216);
+    }
+    .social-link {
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .social-link:hover {
+      text-shadow: 0 0 10px #00e0ff;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #09090b;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 glow-text" href="#">Ali Shafique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center justify-content-center text-center text-light">
+    <div>
+      <img src="https://via.placeholder.com/150" alt="Ali Shafique" class="rounded-circle mb-4 profile-img">
+      <h1 class="fw-bold glow-text">Hi, I’m Ali Shafique</h1>
+      <p class="lead text-muted">Front-End Developer | ML & AI Enthusiast | Software Engineer (UMT)</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container text-light py-5">
+    <h2 class="text-center section-title">About Me</h2>
+    <p class="text-center w-75 mx-auto text-secondary">
+      I’m an undergraduate Software Engineering student at the University of Management and Technology (UMT),
+      passionate about building interactive and user-focused web applications.  
+      I’ve developed various academic and personal projects — from a Currency Converter and Café Management System
+      to full web-based platforms and AI-driven experiments.  
+      I’ve also worked at TechSolutions as a Sales Agent (1 year) and completed a remote ML/AI internship at CodeGeneration.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills-section py-5">
+    <div class="container">
+      <h2 class="text-center section-title text-light">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 col-6"><div class="skill-card">HTML</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">CSS</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">Bootstrap</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">JavaScript</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">C++ (OOP, DSA)</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">Database & SQL</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">Machine Learning</div></div>
+        <div class="col-md-3 col-6"><div class="skill-card">AI Concepts</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container py-5 text-light">
+    <h2 class="text-center section-title">Projects</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h5 class="fw-bold">Currency Converter (PF)</h5>
+          <p class="text-secondary">C++ console application for dynamic currency conversion.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h5 class="fw-bold">Cafe Management System (OOP)</h5>
+          <p class="text-secondary">A complete OOP project implementing file handling and class design.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h5 class="fw-bold">File Explorer (DSA)</h5>
+          <p class="text-secondary">Data structures-based file navigation system using stacks and queues.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h5 class="fw-bold">Election Management System (DB)</h5>
+          <p class="text-secondary">Full-fledged election management database with CRUD and SQL integration.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h5 class="fw-bold">Clown Websites (Front-End)</h5>
+          <p class="text-secondary">Creative front-end websites built with HTML, CSS, and Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section py-5 text-center">
+    <h2 class="section-title text-light">Contact</h2>
+    <p class="text-secondary mb-3">Let’s connect and collaborate!</p>
+    <p class="text-light">📧 alishafique@example.com</p>
+    <div class="mt-3">
+      <a href="https://linkedin.com/in/yourlinkedin" class="social-link mx-2">LinkedIn</a>
+      <a href="https://github.com/alishafique123" class="social-link mx-2">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 text-secondary">
+    © 2025 Ali Shafique — Built with 💻 passion & creativity
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
